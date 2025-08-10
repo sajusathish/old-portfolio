@@ -86,3 +86,54 @@ margin-top: 0;
       #surround:hover span[id="onhover"] {
         display: block;
       }
+/* Split image for About page */
+.about-split {
+  display: flex;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.about-split-part {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: flex 0.5s ease, filter 0.5s ease;
+  filter: grayscale(80%);
+  cursor: pointer;
+}
+
+.about-split-part:hover {
+  flex: 3;
+  filter: grayscale(0%);
+}
+
+.about-split-part .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-split-part:hover .overlay {
+  opacity: 1;
+}
+
+.about-split-part.part-one {
+  background-image: url("https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=80");
+}
+
+.about-split-part.part-two {
+  background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80");
+}
+
+.about-split-part.part-three {
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80");
+}
