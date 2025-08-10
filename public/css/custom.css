@@ -1,0 +1,88 @@
+nav {
+
+	background-color: #424242 !important;
+	
+}
+
+nav ul li a{
+	color: white;
+}
+#logo-container{
+	color: white;
+}
+.zero-padding {
+padding: 0 0 0 !important;
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+}
+
+.zero-margin{
+margin-bottom: 0;
+margin-top: 0;
+}
+
+.changeimg {
+        
+        position: relative;
+        display: inline-block;
+      
+    }
+    .changeimg .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .changeimg:hover .img-top {
+        display: inline;
+    }
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    
+    .bg {
+        /* The image used */
+        background-image: url("../img/background.png");
+    
+        /* Full height */
+        height: 100%; 
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+	    .bg-responsive {
+        /* The image used */
+        background-image: url("../img/home/mobile-view/background.jpg");
+    
+        /* Full height */
+        height: 75%; 
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+		no-repeat center center fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+    }
+
+
+    .full-width{
+        max-width: 100% !important;
+        height: 100% !important;
+    }
+    #onhover {
+        display: none;
+      }
+      #surround:hover span[id="initial"] {
+        display: none;
+      }
+      #surround:hover span[id="onhover"] {
+        display: block;
+      }
