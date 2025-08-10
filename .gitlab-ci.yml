@@ -3,9 +3,10 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+    - mkdir public
+    - find . -maxdepth 1 -mindepth 1 ! -name public ! -name .git -exec cp -r {} public/ \;
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
