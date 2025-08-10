@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Modern portfolio theme */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --accent-color: #6610f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 56px;
+}
+
+nav {
+  background: #ffffff !important;
+  color: var(--text-color);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  transition: box-shadow .3s;
+}
+
+nav.scrolled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  transition: color .3s;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--text-color) !important;
+}
+
+nav a:hover {
+  color: var(--primary-color) !important;
+}
+
+a {
+  color: var(--primary-color);
+  transition: color .3s;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.btn-modern {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background .3s, transform .3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-modern:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+img {
+  transition: transform .3s, box-shadow .3s;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.section {
+  padding: 4rem 0;
+}
