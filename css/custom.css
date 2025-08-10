@@ -86,3 +86,34 @@ margin-top: 0;
       #surround:hover span[id="onhover"] {
         display: block;
       }
+/* Split image for About page */
+.about-split {
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.about-split-part {
+  width: 33.333%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.about-split-part.part-left {
+  object-position: left center;
+}
+
+.about-split-part.part-center {
+  object-position: center center;
+}
+
+.about-split-part.part-right {
+  object-position: right center;
+}
+
+.about-split-part:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
